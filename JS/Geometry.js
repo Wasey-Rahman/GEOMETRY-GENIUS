@@ -27,6 +27,15 @@ function AreaCalculationTwo(){
 }
 
 
+// Background Color in card
+const card = document.querySelector('.card');
+
+card.addEventListener('mouseenter', function() {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  card.style.backgroundColor = '#' + randomColor;
+});
+
+
 
 
 
