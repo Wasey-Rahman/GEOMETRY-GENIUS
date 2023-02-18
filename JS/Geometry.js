@@ -34,6 +34,22 @@ card.addEventListener('mouseenter', function() {
   const randomColor = Math.floor(Math.random()*16777215).toString(16);
   card.style.backgroundColor = '#' + randomColor;
 });
+card.addEventListener('mouseleave', function() {
+    card.style.backgroundColor = '#fff';
+  });
+
+//   Area of Ellipse
+function EllipseArea(a, b) {
+    const Area = Math.PI * a * b;
+    Area=Area.toFixed(2);
+    document.getElementById("Area").textContent =Area;
+  }
+  const a = 10;
+const b = 4;
+ calculateEllipseArea(a, b);
+  
+ 
+ 
 
 
 
