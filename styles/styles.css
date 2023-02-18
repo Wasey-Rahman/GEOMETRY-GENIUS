@@ -3,8 +3,11 @@
     margin-bottom: 50px;
 }
 .btn {
-    margin-left: 110px;
+    margin-left: 80px;
 }
 .Space{
     margin-bottom: 30px;
+}
+.card_one{
+    flex-direction: row-reverse;
 }
