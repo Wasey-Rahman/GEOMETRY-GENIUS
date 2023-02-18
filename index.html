@@ -15,7 +15,8 @@
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><h2>Interactive</h2> 
            <p>Geometry Genius</p></a>
-           <button type="button" class="btn btn-primary">Blog</button>
+           <button id="Buttons"type="button" class="btn btn-primary">Blog</button>
+
          </div>
         </nav>
       </div>
@@ -29,7 +30,10 @@
             <div class="card-body">
               <h5 class="card-title text-center">Triangle</h5>
               <p class="card-text text-center">Area(A)=0.5 x b x h</p>
-              <button type="button" class="btn btn-primary ">Calculate</button>
+              
+              <input class="w-25 ms-4 mb-4" type="number" placeholder="b" id="number_one"><label>cm</label>
+              <input class="w-25 ms-4 mb-4" type="number" placeholder="h" id="number_two"><label>cm</label>
+              <button   class="btn btn-primary " onclick="AreaCalculation()">Calculate</button>
             </div>
             
           </div>
@@ -40,8 +44,10 @@
             <div class="card-body">
               <h5 class="card-title text-center">Rectangle</h5>
               <p class="card-text text-center">Area(A)=w x l</p>
-              <button type="button" class="btn btn-primary ">Calculate</button>
-
+              <input class="w-25 ms-4 mb-4" type="number" placeholder="w" id="number_three"><label>cm</label>
+              <input class="w-25 ms-4 mb-4" type="number" placeholder="l" id="number_four"><label>cm</label>
+              <button   class="btn btn-primary " onclick="AreaCalculationTwo()">Calculate</button>
+              
             </div>
             
           </div>
@@ -64,7 +70,9 @@
               
               <div class="card-body">
                 <h5 class="card-title text-center"><ins>Area Calculation</ins> </h5>
-                <p class="card-text text-center"></p>
+                <p>1.Triangle  <span id="Calculation"></span> cm&sup2; </p>
+                <p>2.Rectangle  <span id="Calculate"></span> cm&sup2;</p>
+                
                 
               </div>
               
@@ -86,7 +94,7 @@
               <h5 class="card-title text-center">Rhombus</h5>
               <p class="card-text text-center">Area(A)=0.5 x d1 x d2</p>
               <p class="card-text text-center">d1=16cm , d2=8cm</p>
-              <button type="button" class="btn btn-primary ">Calculate</button>
+              <button   class="btn btn-primary " >Calculate</button>
             </div>
             
           </div>
@@ -98,7 +106,7 @@
               <h5 class="card-title text-center">Pentagon</h5>
               <p class="card-text text-center">Area(A)=0.5 x p x b</p>
               <p class="card-text text-center">p=6cm , b=10cm</p>
-              <button type="button" class="btn btn-primary ">Calculate</button>
+              <button   class="btn btn-primary ">Calculate</button>
 
             </div>
             
@@ -111,7 +119,7 @@
               <h5 class="card-title text-center">Ellipse</h5>
               <p class="card-text text-center">Area(A)= pi ab</p>
               <p class="card-text text-center">a=10cm , b=4cm</p>
-              <button type="button" class="btn btn-primary ">Calculate</button>
+              <button   class="btn btn-primary " >Calculate</button>
             </div>
             
           </div>
@@ -119,5 +127,13 @@
       </div>
 
 </section>
+<script src="JS/Geometry.js"></script>
+ <!--Going to index2  -->
+<script>
+  const button =document.getElementById("Buttons");
+  button.addEventListener("click",function(){
+    window.location.href="index2.html";
+  });
+</script>
 </body>
 </html>
